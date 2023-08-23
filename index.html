@@ -1,0 +1,53 @@
+<html>
+<head>
+
+</head>	
+<body>
+
+	<h1>Prueba de formulario libro de reclamaciones Perú</h1>
+	<p>Seleccione la marca para probar:</p>
+	<p><a href="" id="linkBillabong">Billabong</a></p>
+	<p><a href="" id="linkBSoul">BSoul</a></p>
+	<p><a href="" id="linkColumbia">Columbia</a></p>
+	<p><a href="" id="linkHushPuppies">Hush Puppies</a></p>
+	<p><a href="" id="linkJansport">Jansport</a></p>
+	<p><a href="" id="linkKeds">Keds</a></p>
+	<p><a href="" id="linkRockford">Rockford</a></p>
+	<p><a href="" id="linkSupermall">Supermall</a></p>
+	<p><a href="" id="linkPatagonia">Patagonia</a></p>
+
+<script type="text/javascript">
+	function loadLinks() {
+		var date = new Date();
+
+		var year = date.getFullYear();
+		var month = '0';
+		if ((date.getMonth() + 1) < 9) {
+			month = '0' + (date.getMonth() + 1);
+		} else {
+			month = (date.getMonth() + 1);
+		}
+		var day = '0';
+		if ((date.getDate() + 1) < 9) {
+			day = '0' + (date.getDate());
+		} else {
+			day = (date.getDate());
+		}
+
+		var dateSend = year + "-" + month + "-" + day;
+
+		document.getElementById("linkBillabong").href = "https://lightning.nativeforms.app/m0/5k7g-5m7Zzfb?marca=Billabong&fechareclamo="+dateSend;
+		document.getElementById("linkBSoul").href = "https://lightning.nativeforms.app/m0/5k7g-5m7Zzfb?marca=BSoul&fechareclamo="+dateSend;
+		document.getElementById("linkColumbia").href = "https://lightning.nativeforms.app/m0/5k7g-5m7Zzfb?marca=Columbia&fechareclamo="+dateSend;
+		document.getElementById("linkHushPuppies").href = "https://lightning.nativeforms.app/m0/5k7g-5m7Zzfb?marca=Hush Puppies&fechareclamo="+dateSend;
+		document.getElementById("linkJansport").href = "https://lightning.nativeforms.app/m0/5k7g-5m7Zzfb?marca=Jansport&fechareclamo="+dateSend;
+		document.getElementById("linkKeds").href = "https://lightning.nativeforms.app/m0/5k7g-5m7Zzfb?marca=Keds&fechareclamo="+dateSend;
+		document.getElementById("linkRockford").href = "https://lightning.nativeforms.app/m0/5k7g-5m7Zzfb?marca=Rockford&fechareclamo="+dateSend;
+		document.getElementById("linkSupermall").href = "https://lightning.nativeforms.app/m0/5k7g-5m7Zzfb?marca=Supermall&fechareclamo="+dateSend;
+		document.getElementById("linkPatagonia").href = "https://lightning.nativeforms.app/m0/5k7g-5m7Zzfb?marca=Patagonia&fechareclamo="+dateSend;
+	}  
+	loadLinks();
+</script>
+
+</body>
+</html>
